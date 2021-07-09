@@ -54,7 +54,8 @@ class _LoginState extends State<Login> {
                   RaisedButton(
                     onPressed: () {
                       if (email == 'eu@usuario.com.br' && senha == '123') {
-                        Navigator.pushNamed(context, '/pagina_inicial');
+                        Navigator.pushReplacementNamed(
+                            context, '/pagina_inicial');
                       }
                     },
                     child: Text('Entrar'),
